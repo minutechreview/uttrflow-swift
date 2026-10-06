@@ -123,10 +123,9 @@ each with its `language` and the `evidence` it needs before anything is taken ba
 `pausedRestatedNumber`). `Restatement` reads one table for English and romanised Hindi; a new
 phrase is a row, never a Swift literal. `CorrectionTriggerTableTests` holds 30 Hinglish
 sentences with a correction and 30 with the same words said plainly, and fails when a row has
-no case of either kind. Measured on the table as shipped: 22 of 30 corrections apply, and 3 of
-30 plain sentences lose words ("usko sorry bolna padega", "usne no sorry bhi nahi bola",
-"tum chalo or rather nahi"), because a one-word replacement does not yet know romanised Hindi
-word classes. The same 11 sentences read the same way before the table, with the triggers in
+no case of either kind. Measured on the table as shipped: 22 of 30 corrections apply, and all
+30 plain sentences keep their words. The 8 corrections that do not apply miss because a
+one-word replacement does not yet know romanised Hindi word classes. The same 8 sentences read the same way before the table, with the triggers in
 Swift, so none is a regression; each is listed in `owedTriggerCases` until a fix makes it pass.
 
 ## Tier 3 — never
