@@ -126,8 +126,8 @@ sentences with a correction and 30 with the same words said plainly, and fails w
 no case of either kind. Measured on the table as shipped: 22 of 30 corrections apply, and all
 30 plain sentences keep their words. The 8 corrections that do not apply miss because a
 one-word replacement does not yet know romanised Hindi word classes. The same 8 sentences read
-the same way before the table, with the triggers in Swift, so none is a regression; each is listed in
-`owedTriggerCases` until a fix makes it pass.
+the same way before the table, with the triggers in Swift, so none is a regression; each is
+listed in `owedTriggerCases` until a fix makes it pass.
 
 ## Tier 3 — never
 
